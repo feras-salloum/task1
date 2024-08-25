@@ -1,0 +1,257 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.BottomNavigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex: 1;
+}
+@media (min-width: 576px) {
+  .MENU {
+    display: none !important;
+  }
+}
+@media (max-width: 577px) {
+  .BottomNavigation {
+    display: none !important;
+  }
+}
+.nacLink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #666666;
+  transition: all 0.3s ease-in-out;
+}
+.nacLink:hover {
+  color: #1976d2;
+}
+.MenuLink {
+  width: 100%;
+}
+/*************************Footer*********************************/
+.Footer {
+  width: 100%;
+}
+.FooterCopyright {
+  border-radius: 0;
+}
+.FooterLinkGroup {
+  gap: 10px;
+}
+/***************************App********************************/
+.App {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #374151;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.container {
+  flex: 1;
+  width: 100%;
+  padding-top: 60px;
+}
+@media (min-width: 576px) {
+  .container {
+    width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    width: 1320px;
+  }
+}
+/****************************Contact*******************************/
+.Contact {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 25px;
+}
+.contactLinkFac,
+.contactLinkYot,
+.contactLinkins,
+.contactLinktik {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+  font-weight: bold;
+}
+.contactLinkFac {
+  color: #1976d2;
+}
+.contactLinkYot {
+  color: red;
+}
+.contactLinkins {
+  color: #b5459e;
+}
+.contactLinktik {
+  color: #26f2ef;
+}
+/****************************About*******************************/
+.About {
+  padding: 25px 0;
+}
+.AccordionPanel {
+}
+.AccordionTitle {
+  background-color: white;
+  color: #1976d2;
+}
+.AccordionContent {
+  background-color: #1212127b;
+  color: white;
+}
+.AccordionContent p {
+  color: white;
+}
+/***************************wither********************************/
+.wither {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 25px;
+  gap: 10px;
+}
+.temp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+  max-width: 200px;
+}
+/***************************Movies********************************/
+.Movies {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 25px;
+  align-items: center;
+  justify-content: center;
+}
+.divFOrm {
+  width: 80%;
+}
+.moviesLabel {
+  color: white;
+  font-size: 20px;
+}
+#T,
+#Y {
+  font-size: 16px;
+  font-weight: bold;
+}
+.CardActionArea {
+  display: flex;
+  flex-direction: column;
+}
+.moviesCardContent {
+  background-color: #121212;
+  color: white;
+}
+.moviesCardContent p {
+  color: white;
+}
+.CardMedia {
+  width: 100%;
+  height: 100%;
+}
+/***************************home********************************/
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+  padding: 25px;
+}
+.home * {
+  direction: rtl;
+}
+.title {
+  text-align: center;
+  color: white;
+}
+.title h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.title p {
+  line-height: 2;
+}
+.ListItem {
+  display: flex;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.Avatarimg {
+  border-radius: 0 !important;
+  width: max-content !important;
+  margin-right: 10px;
+}
+.Divider {
+  width: 100% !important;
+  height: 2px;
+  background-color: #12121231;
+}
+/***************************Translation********************************/
+.Translation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  gap: 25px;
+}
+.Textarea {
+  text-align: center;
+  padding: 10px 0 0 0;
+  background-color: white;
+  width:80%;
+  max-width:400px ;
+  height: min-content;
+  resize: none;
+  font-size: larger;
+  font-weight: bold;
+  border-radius: 20px;
+}
+.imgnot{
+  margin-top: 10px;
+  height: 70vh;
+  background-size: contain;
+}
+@media (min-width: 768px) {
+  .imgnot {
+    width: 100%;
+  }
+}
